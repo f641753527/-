@@ -16,6 +16,7 @@ const promise = new MyPromise((resolve, reject) => {
   setTimeout(() => resolve('异步 promise'), 1500)
 })
 
+
 promise.then(value => {
   console.log(value)
 }, reason => {
