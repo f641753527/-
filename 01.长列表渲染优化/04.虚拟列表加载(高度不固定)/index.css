@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#app{
+  overflow-y: scroll;
+  position: relative;
+}
+
+.list{
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  left: 30px;
+  list-style: none;
+}
+
+.item{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.item:nth-of-type(3n) {
+  height: 70px;
+}
+.item:nth-of-type(5n) {
+  height: 90px;
+}
+.item:nth-of-type(7n) {
+  height: 110px;
+}
+.item:nth-of-type(11n) {
+  height: 140px;
+}
