@@ -1,6 +1,7 @@
 const MyPromise = require('./MyPromise')
 
 new MyPromise((resolve, reject) => {
+
   // resolve('success')
   reject('reject fail')
 }).then(value => {
