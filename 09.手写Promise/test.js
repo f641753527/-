@@ -8,6 +8,7 @@ new MyPromise((resolve, reject) => {
 }).then(value => {
   console.log(value)
   return '9999'
+  
 }, reason => {
   console.log(reason)
   return reason
