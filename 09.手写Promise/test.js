@@ -21,3 +21,4 @@ promise.then(value => {
 }, reason => {
   console.log(reason)
 }).then(value => console.log('***', value), reason => console.log('&&&', reason))
+
