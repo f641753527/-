@@ -12,12 +12,12 @@ new MyPromise((resolve, reject) => {
 }).then(value => console.log('====', value), reason => console.log(reason))
 
 
-// const promise = new MyPromise((resolve, reject) => {
-//   setTimeout(() => resolve('异步 promise'), 1500)
-// })
+const promise = new MyPromise((resolve, reject) => {
+  setTimeout(() => resolve('异步 promise'), 1500)
+})
 
-// promise.then(value => {
-//   console.log(value)
-// }, reason => {
-//   console.log(reason)
-// }).then(value => console.log('***', value), reason => console.log('&&&', reason))
+promise.then(value => {
+  console.log(value)
+}, reason => {
+  console.log(reason)
+}).then(value => console.log('***', value), reason => console.log('&&&', reason))
